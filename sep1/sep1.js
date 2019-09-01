@@ -31,7 +31,7 @@ $(".btn").on("click", function(event){
     $("body").css({"background":"violet", "color":"red"});
   };
   if(counter===10){
-    $("body").css({"background":"black", "color":"white"});
+    $("body").css({"background":"black", "color":"white", "font-family":"fantasy"});
     alert("Okay I'm tired of this now. Keep clicking if you want, but nothing else will happen.");
   };
   if(counter===20){
