@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>5, live, stayin' alive</title>
+</head>
+<body>
+  <div class="jumbotron display-4 text-center">ARE YOU READY FOR SOME FOOTBALL?</div>
+<div class="container">
+<p class="text-center">In honor of today being the first day of the 2019 NFL season, I've decided to make a football scoreboard app!<br>
+This will let you keep track of scores, and even down and distance! Plus, with how scoring in the NFL works, you can technically use this for the CFL too! (And even Australia's AFL if you're feeling adventerous!)</p>
+<div class="text-center">
+  <h3>
+<span id="down">Down: </span> | <span id="distance">To Go: </span>
+</h3>
+  <div class="row text-center">
+    <div class="col-12 col-md-6"><strong>Away</strong><br>
+    <div class="awayscore display-4"></div>
+  <button class="btn btn-primary">Touchdown (6 pts)</button><br>
+<button class="btn btn-primary">Field Goal (3 pts)</button><br>
+<button class="btn btn-primary">Safety/2 Point Conversion (2 pts)</button><br>
+<button class="btn btn-primary">PAT/Rouge (1 pt)</button></div>
+    <div class="col-12 col-md-6"><strong>Home</strong>
+        <div class="homescore display-4"></div>
+        <button class="btn btn-primary">Touchdown (6 pts)</button><br>
+      <button class="btn btn-primary">Field Goal (3 pts)</button><br>
+      <button class="btn btn-primary">Safety/2 Point Conversion (2 pts)</button><br>
+      <button class="btn btn-primary">PAT/Rouge (1 pt)</button></div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="sep5.js"></script>
+</body>
+</html>
