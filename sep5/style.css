@@ -1,0 +1,16 @@
+body{
+  background: green;
+  color: white
+}
+
+#board{
+  background: black;
+  color: orange;
+  font-family: 'Kanit', sans-serif;
+}
+
+.jumbotron{
+  background: blue;
+  color: white;
+  font-weight: bold
+}
