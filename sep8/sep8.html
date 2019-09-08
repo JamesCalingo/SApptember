@@ -10,16 +10,29 @@
 <title>The "magic" 8 ball</title>
 </head>
 <body>
-
+<div class="container">
 <p>Today, I'm bringing back a classic: The Magic 8 Ball! 
 
   Simply put some form of statement (preferrably a question) into the text box, click the button, and see what the program thinks of your question! 
 
   (DISCLAIMER: This program should not be used to make actual decisions, for it is merely meant for just having fun)
-  
 </p>
+<form>
+  <div class="form-group">
+    <label for="question-input"></label>
+    <input type="input" class="form-control" id="question-input" aria-describedby="What is your question?" placeholder="What is your question?">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  <div id="question"></div>
+  <div class="display-3 text-center font-weight-bold" id="answer"></div>
+  <div id="askagain"></div>
+  </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="sep8.js"></script>
 </body>
 </html>
