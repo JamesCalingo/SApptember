@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Bottom of the 9th</title>
+</head>
+<body>
+  <div class="jumbotron my-0 py-2">
+  <p>it's the bottom of the 9th - we're down by ten runs, and we NEED this win to keep our season alive. Can you help us get the win?</p>
+  </div>
+
+  <p>We're giving you control of our batters. The pitcher will throw a pitch either down the middle or outside, and you have to decide whether or not to swing at it.</p>
+
+  <ul>
+    <li>If the pitch is down the middle and you swing at it, it's a hit! (For our purposes, all hits will be singles)</li>
+    <li>If the pitch is outside and you choose not to swing, it's a ball. Four balls and you get a baserunner for free!</li>
+    <li>If the pitch is down the middle and you don't swing, or if the pitch is outside and you do swing at it, it's a strike. Three strikes and you're out!</li>
+  </ul>
+
+  <p>If you score four runs before you make three outs, we win! Otherwise...we lose.</p>
+  
+  <h3>Can you do it?</h3>
+  <div class="results display-3 font-weight-bold">
+  <button data-attribute="1" class="btn">Swing at pitch</button>
+  <button data-attribute="0" class="btn">Take the pitch</button>
+  </div>
+  <div id="game"></div>
+  <div id="bases"></div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="sep9.js"></script>
+</body>
+</html>
