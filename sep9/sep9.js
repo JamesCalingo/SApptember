@@ -13,13 +13,16 @@ $(".btn").on("click", function (event) {
   swing = $(this).attr("data-attribute");
   console.log(swing);
 
+// Swing=0 means the batter did not swing, and swing = 1 means they did.
+// Pitch being 0 or 1 means that the pitcher threw down the middle, and 2 and 3 means that they threw outside.
+
   if (pitch < 2 && swing == 1 || ball === 4) {
     runners++;
     ball = 0;
     strike = 0;
   };
 
-  if (pitch > 2 && swing == 0) {
+  if (pitch > 1 && swing == 0) {
     ball++;
   };
 
@@ -47,6 +50,11 @@ $(".btn").on("click", function (event) {
 
   if (runners > 3 && pitch < 2 && swing == 1 || runners > 3 && ball === 4) {
     runs++
+  }
+
+  // After 6 runs are scored, make the pitcher throw outside more often so that batters can't just swing wildly at everything
+  if(runs > 6 && pitch > 1){
+    outs ++
   }
 
   $("#game").html(`<h2>Runs Scored: ${runs}<br>Balls: ${ball}||Strikes: ${strike}||Outs: ${outs}</h2>`);

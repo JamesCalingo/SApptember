@@ -4,7 +4,8 @@ body{
 }
 
 .jumbotron{
-  background: skyblue
+  background: skyblue;
+  color: gray
 }
 
 .btn{
