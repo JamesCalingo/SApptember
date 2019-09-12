@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>The three "M"'s</title>
+</head>
+<body>
+  <div class="container">
+  <h1>A mean and median calculator!</h1>
+<p>This page will let you calculate the mean, median, and mode of any set of numbers! Simply add numbers into your set with the input box below, and I will instantly calculate the mean, median, and mode for your set!</p>
+
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Numbers</label>
+      <input type="number" class="form-control" id="numberInput" aria-describedby="numberHelp" placeholder="Enter numbers here">
+    </div>
+    <button type="submit" id="addNumber" class="btn btn-primary">Add</button>
+    <button id="calculateMMM" class="btn btn-success">Get Mean and Median</button>
+    <button id="reset" class="btn btn-danger">Reset</button>
+  </form>
+
+<h1 id="numbers"></h1>
+
+<div class="container justify-content-center"></div>
+<div class="row text-center justify-content-center">
+  <div class="col-12 col-md-6">Mean<br><h1 id="mean"></h1></div>
+  <div class="col-12 col-md-6">Median<br><h1 id="median"></h1></div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="sep12.js"></script>
+</body>
+</html>
