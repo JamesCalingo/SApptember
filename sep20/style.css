@@ -1,0 +1,14 @@
+body{
+  font-size: 18pt;
+  font-family: 'Merriweather', serif;
+}
+
+#dieRoll{
+  background: red;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn{
+  font-family: Arial, Helvetica, sans-serif
+}
