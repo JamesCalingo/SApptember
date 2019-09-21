@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Blackjack!</title>
+</head>
+<body>
+<h1 class="text-center">It's Blackjack!</h1>
+<p class="text-center">...ish.</p>
+
+<p>You start with a random value between 1 and 11.Click the green button below to add to your total until you want to stop.</p>
+
+<p>The computer will then be given a total that is at least 17. If your total is higher than the computer's total, you win the game. However, if the computer total is higher than yours, or you go over 21, you lose.</p>
+
+<button id="hitMe" class="btn btn-success">Hit</button>
+<button id="stay" class="btn btn-warning">Stay</button>
+<br>
+Your total is:
+<div id="total" class="display-2"></div>
+<div id="gameRecord" class="mt-1">Wins: <span id="wins"></span> || Losses: <span id="losses"></span> || Ties: <span id="draws"></span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="sep21.js"></script>
+</body>
+</html>

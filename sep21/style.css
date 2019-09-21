@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  color: gold;
+  font-family: 'Merriweather', serif;
+  background-color: #00540d;
+background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+}
+
+#gameRecord{
+  font-size: 18pt
+}
