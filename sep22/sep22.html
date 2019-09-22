@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>The double...dice!</title>
+</head>
+<body>
+<div class="container">
+  <p>There's a fair number of games that have you roll two six sided dice (Catan, Machi Koro, and Monopoly amongst others). However, not only does rolling dice involve a certain amount of physical...skill, so to speak, those dice tend to roll off the table and onto the floor.</p>
+  
+  <p>Now, with this app, you can roll two dice with just the press of a button! Not only will you get two different numbers (or the same number twice), you'll also see the total of the roll! (Before you ask, there are games that use the individual rolls of the dice as well as the total for certain things.)</p>
+  <div class="container">
+    <div id="dice" class="row justify-content-center">
+      <div class="col-6 col-md-4">Die 1<br><span id="die1" class="display-3"></span></div>
+      <div class="col-6 col-md-4">Die 2<br><span id="die2" class="display-3"></span></div>
+      <div class="col-6 col-md-4">Total<br><span id="total" class="display-3"></span></div>
+    </div>
+    <div class="row">
+      <button class="btn btn-dark">Roll the Dice!</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="sep22.js"></script>
+</body>
+</html>
