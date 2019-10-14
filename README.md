@@ -11,7 +11,11 @@ Sapptember is a project of 30 different web pages/applications created over the 
 - And many more!
 
 # How to Use
-This project is available online at http://jamescalingo.com/SApptember, or if you wish to have it locally, you can simply clone the repository onto your machine by using git clone git@github.com:JamesCalingo/SApptember.git in your computer's terminal program.<br/>
+This project is available online at http://jamescalingo.com/SApptember, or if you wish to have it locally, you can simply clone the repository onto your machine by using
+
+  git clone git@github.com:JamesCalingo/SApptember.git 
+
+in your computer's terminal program.<br/>
 
 I've set it up so that you can simply use the index.html page to access everything. 
 
