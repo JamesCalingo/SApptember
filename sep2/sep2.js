@@ -18,7 +18,10 @@ $(".gamebtn").on("click", function (event){
   The coin came up... ${coinChoice}`);
   if(userChoice === coinChoice){
     streak++;
-    $("#winlose").html(`You win!<br>You've won ${streak} time(s in a row)!`);
+    $("#winlose").html(`You win!`);
+    if(streak > 1){
+      $("#winlose").html(`You win!<br>You've won ${streak} times in a row!`)
+    }
    
   }
   else{
