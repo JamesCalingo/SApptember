@@ -3,11 +3,19 @@ $(".btn").on("click", function(event){
   event.preventDefault();
   counter++
   if (counter===1){
-  alert("You clicked the magic button!");
+  Swal.fire(
+    'Good job!',
+    'You clicked the button!',
+    'success'
+  );
   };
   console.log(counter);
   if(counter===2){
-    alert("You clicked it again!");
+    Swal.fire(
+      'Good job!',
+      'You clicked the button again!',
+      'success'
+    );
   };
   if(counter===3){
     $("body").css("background", "red");
@@ -32,7 +40,10 @@ $(".btn").on("click", function(event){
   };
   if(counter===10){
     $("body").css({"background":"black", "color":"white", "font-family":"fantasy"});
-    alert("Okay I'm tired of this now. Keep clicking if you want, but nothing else will happen.");
+    Swal.fire(
+      'You must really like clicking the button, huh?',
+      "Well, I've got some bad news: this is the last thing that will happen",
+    );
   };
   if(counter===20){
     $("#buttonzone").html("You seriously clicked the button THAT many times? Wow.");
